@@ -1,0 +1,60 @@
+# version: 1.0.0
+
+add_newline = true
+continuation_prompt = "[▸▹ ](dimmed white)"
+
+format = '''
+[┌](purple) $username$hostname $time
+[│](purple) $directory
+[└─►](purple) '''
+
+right_format = "$git_branch$git_commit$git_status"
+
+[username]
+style_user = 'fg:39'
+style_root = 'black bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = '@[$hostname](bold red)'
+trim_at = '.local'
+disabled = false
+
+[directory]
+truncation_length = 6
+truncation_symbol = '…/'
+format = '[$path]($style)[$read_only]($read_only_style)'
+
+[git_branch]
+truncation_length = 20
+truncation_symbol = '~'
+format = "[$branch(:$remote_branch)]($style)"
+ignore_branches = ['master', 'main']
+
+[git_commit]
+commit_hash_length = 5
+
+[git_status]
+style = 'blue'
+format = '([\[$all_status$ahead_behind\]]($style))'
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format = "%R"
+utc_time_offset = "local"
+style = "italic dimmed white"
