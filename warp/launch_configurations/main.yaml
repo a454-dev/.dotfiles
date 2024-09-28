@@ -1,0 +1,30 @@
+# Warp Launch Configuration
+
+---
+name: Main
+windows:
+  - tabs:
+      - title: sandbox
+        layout:
+          split_direction: horizontal
+          panes:
+            - cwd: ~/
+            - split_direction: vertical
+              panes:
+                - cwd: /Users/alif/Documents
+                - cwd: /Users/alif/Downloads
+        color: red
+      - title: crm - be_fe
+        layout:
+          split_direction: horizontal
+          panes:
+            - cwd: /Users/alif/Projects/dst/crm-backend
+            - cwd: /Users/alif/Projects/dst/crm-frontend
+        color: green
+      - title: crm - pc_sb
+        layout:
+          split_direction: horizontal
+          panes:
+            - cwd: /Users/alif/Projects/dst/crm-product-catalogue
+            - cwd: /Users/alif/Projects/dst/crm-subscriptions
+        color: blue
