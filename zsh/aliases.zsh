@@ -29,13 +29,13 @@ alias gplom='git pull origin main'
 # db migration, must be on backend folder
 alias mbe='ss artisan migrate:fresh --seed'
 alias mpc='ss exec product php artisan migrate:fresh --seed'
-alias msb='ss exec subscriptions php artisan migrate:fresh --seed'
+alias msb='ss exec subscription php artisan migrate:fresh --seed'
 alias mg='mbe && mpc && msb'
 
 # run tests, must be on backend folder
 alias tbe='ss artisan test'
 alias tpc='ss exec product php artisan test'
-alias tsb='ss exec subscriptions php artisan test'
+alias tsb='ss exec subscription php artisan test'
 alias ta='tbe && tpc && tsb'
 alias tbed='ss artisan dusk'
 
