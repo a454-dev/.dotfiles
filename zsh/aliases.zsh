@@ -48,3 +48,6 @@ alias ld='l -D'
 alias wblc='open "http://www.crm.test:3000"'
 alias wbsg='open "https://www.staging.tungku.link"'
 alias wbpd='open "https://www.tungku.link"'
+
+# neovim
+alias vim='nvim'
