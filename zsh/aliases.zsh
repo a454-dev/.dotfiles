@@ -7,6 +7,7 @@ alias cbe='cd ~/Projects/dst/crm-backend'
 alias cfe='cd ~/Projects/dst/crm-frontend'
 alias cpc='cd ~/Projects/dst/crm-product-catalogue'
 alias csb='cd ~/Projects/dst/crm-subscriptions'
+alias cmr='cd ~/Projects/dst/crm-monorepo'
 
 # git
 alias gst='git status'
@@ -21,6 +22,7 @@ alias grs='git restore'
 alias gsh='git stash'
 alias glgo='git log --oneline -10'
 alias gcom='git commit -m'
+alias gpl='git pull'
 alias gpluc='git pull upstream crm'
 alias gplum='git pull upstream main'
 alias gploc='git pull origin crm'
@@ -41,6 +43,7 @@ alias tbed='ss artisan dusk'
 
 # eza
 alias l='eza -a'
+alias ls='eza -a'
 alias lf='l -f'
 alias ld='l -D'
 
@@ -51,3 +54,4 @@ alias wbpd='open "https://www.tungku.link"'
 
 # neovim
 alias vim='nvim'
+alias v='nvim'
