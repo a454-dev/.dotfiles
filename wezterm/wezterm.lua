@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
-config.color_scheme = 'Django'
+config.color_scheme = 'Builtin Pastel Dark'
 config.font = wezterm.font 'JetBrains Mono'
 config.window_decorations = "RESIZE"
 config.use_fancy_tab_bar = false
