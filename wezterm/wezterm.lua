@@ -17,6 +17,9 @@ wezterm.on('gui-startup', function(cmd)
   local sb_tab = window:spawn_tab { cwd = '/Users/alif/Projects/dst/crm-subscriptions' }
   sb_tab:set_title 'SB'
 
+  local nt_tab = window:spawn_tab { cwd = '/Users/alif/Projects/dst/crm-note' }
+  nt_tab:set_title 'NT'
+
   local mr_tab = window:spawn_tab { cwd = '/Users/alif/Projects/dst/crm-monorepo' }
   mr_tab:set_title 'MR'
 
