@@ -8,8 +8,8 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/zsh/aliases.zsh
+source ~/dotfiles/zsh/aliases.zsh
 
 export EDITOR='nvim'
-export STARSHIP_CONFIG=~/.dotfiles/zsh/starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
