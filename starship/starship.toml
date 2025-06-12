@@ -1,6 +1,6 @@
 format = """$directory$character"""
 palette = "catppuccin_mocha"
-right_format = """$all"""
+right_format = """$git_branch"""
 command_timeout = 1000
 
 [character]
@@ -8,7 +8,11 @@ vicmd_symbol = "[N] >>>"
 success_symbol = '[➜](bold green)'
 
 [git_branch]
-format =  '[$symbol$branch(:$remote_branch)]($style)'
+format =  '[$branch(:$remote_name/$remote_branch)]($style)'
+always_show_remote = true
+
+[git_status]
+disabled = true
 
 [docker_context]
 disabled = true
