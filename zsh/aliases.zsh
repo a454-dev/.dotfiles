@@ -44,9 +44,8 @@ alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
 
 # eza
-alias l="eza -l --icons --git -a"
-alias lt="eza --tree --level=2 --long --icons --git"
-alias ltree="eza --tree --level=2  --icons --git"
+alias l="eza -laah --icons" 
+alias lt="eza --tree --level=2 --icons"
 
 # neovim
 alias vim='nvim'
