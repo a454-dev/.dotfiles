@@ -1,21 +1,16 @@
-format = """$directory$character"""
+format = '''
+[┌](lavender) $directory $git_branch
+[└─►](lavender) '''
+add_newline = false
 palette = "catppuccin_mocha"
-right_format = """$git_branch"""
 command_timeout = 1000
 
-[character]
-vicmd_symbol = "[N] >>>"
-success_symbol = '[➜](bold green)'
-
 [git_branch]
-format =  '[$branch(:$remote_name/$remote_branch)]($style)'
+format = '[$branch(:$remote_name/$remote_branch)](lavender)'
 always_show_remote = true
 
-[git_status]
-disabled = true
-
-[docker_context]
-disabled = true
+[directory]
+format = '[$path](sky)[$read_only]($read_only_style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
